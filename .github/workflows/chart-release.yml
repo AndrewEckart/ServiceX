@@ -28,6 +28,4 @@ jobs:
         uses: helm/chart-releaser-action@v1.1.0
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-        with:
-          charts_dir: releases
-          charts_repo_url: https://andreweckart.github.io/helm-charts
+          CR_PACKAGE_PATH: "releases"
